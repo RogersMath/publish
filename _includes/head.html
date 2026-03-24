@@ -4,17 +4,17 @@
 <title>{{ page.title | default: site.title }}</title>
 <meta name="description" content="{{ page.description | default: site.description }}">
 
-<!-- Canonical -->
+<!-- Canonical URL -->
 {{ site.url }}{{ site.baseurl }}{{ page.url }}
 
-<!-- OpenGraph -->
+<!-- OpenGraph Tags -->
 <meta property="og:title" content="{{ page.title | default: site.title }}">
 <meta property="og:description" content="{{ page.description | default: site.description }}">
 <meta property="og:type" content="website">
 <meta property="og:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
 <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}/assets/og-image.png">
 
-<!-- JSON-LD -->
+<!-- JSON-LD Schema -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -25,7 +25,6 @@
 }
 </script>
 
-<!-- CSS -->
-{{ site.baseurl }}/assets/css/base.css
-<link rel="stylesheet" href="{{ site.baseurl }}/assets/css}/assets/css/components.css
-<link rel="stylesheet" href="{{ site.baseurl }}/assets
+<!-- CSS Files -->
+<link rel="stylesheet" href="{{ site.baseurlte.baseurl }}/assets/css/layout.css
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/componentss/css/theme.css
