@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include head.html %}
+  </head>
+  <body>
+    <header aria-label="Primary">
+      {% include nav.html %}
+    </header>
+
+    <main id="main-content">
+      {{ content }}
+    </main>
+
+    {% include footer.html %}
+  </body>
+</html>
