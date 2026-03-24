@@ -1,0 +1,36 @@
+/* Typography scale */
+html { font-size: 100%; }
+body {
+  font-family: system-ui, sans-serif;
+  line-height: 1.6;
+  color: #222;
+  background: #fafafa;
+}
+
+/* WCAG AA color constants */
+:root {
+  --primary: #004080;
+  --accent: #0080c0;
+  --text-dark: #222222;
+  --text-light: #ffffff;
+}
+
+/* Focus styles */
+:focus {
+  outline: 3px solid var(--accent);
+  outline-offset: 4px;
+}
+
+/* Skip-link (WCAG requirement) */
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: auto;
+}
+.skip-link:focus {
+  left: 1rem;
+  top: 1rem;
+  background: var(--accent);
+  color: white;
+  padding: 0.5rem;
+}
