@@ -1,0 +1,17 @@
+title: "The Authorship Shift"
+description: "Reimagining English education for an AI-powered world: from essay production to public authorship."
+baseurl: ""
+url: "https://rogersmath.github.io"
+markdown: kramdown
+theme: null
+
+plugins:
+  - jekyll-sitemap
+
+# Permalinks
+permalink: pretty
+
+# Exclude build files
+exclude:
+  - README.md
+  - LICENSE
