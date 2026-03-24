@@ -1,9 +1,18 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <title>{{ page.title | default: site.title }}</title>
-<meta name="description" content="{{ page" content="website"><meta name="description" content="{{ page.description | default: site.description }}">
-<meta property="og:url" content="{{ site.url }}">
-<meta property="og:image" content="{{ site.url }}/assets/og-image.png">
+<meta name="description" content="{{ page.description | default: site.description }}">
+
+<!-- Canonical URL -->
+{{ site.url }}{{ site.baseurl }}{{ page.url }}
+
+<!-- OpenGraph -->
+<meta property="og:title" content="{{ page.title | default: site.title }}">
+<meta property="og:description" content="{{ page.description | default: site.description }}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
+<meta property="og:image" content="{{ site.url }}{{ site.baseurl }}/assets/og-image.png">
 
 <!-- JSON-LD Schema -->
 <script type="application/ld+json">
@@ -11,17 +20,13 @@
   "@context": "https://schema.org",
   "@type": "EducationalOrganization",
   "name": "{{ site.title }}",
-  "url": "{{ site.url }}",
+  "url": "{{ site.url }}{{ site.baseurl }}",
   "description": "{{ site.description }}"
 }
 </script>
 
-/assets/css/base.css
-<link rel="stylesheet" hrefets/css/components.css
-<link rel="stylesheet" href="/
-
-{{ site.url }}{{ page.url }}
-
-<!-- OpenGraph -->
-<meta property="og:title" content="{{ page.title | default: site.title }}">
-<meta property="og:description" content="{{ page.description | default: site.description }}">
+<!-- CSS (must use site.baseurl!) -->
+<link rel="stylesheet" hrefss/base.css
+{{ site.baseurl }}/assets/css/layout.css
+{{ site.baseurl }}/assets/css/components.css
+{{ site.baseurl }}/assets/css/theme.css
