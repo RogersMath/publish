@@ -1,0 +1,9 @@
+main {
+  max-width: 850px;
+  margin: auto;
+  padding: 1rem;
+}
+section {
+  padding: 4rem 0;
+  border-bottom: 1px solid #ddd;
+}
